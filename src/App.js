@@ -3,6 +3,7 @@ import CoffeeInfo from './Components/CoffeeInfo';
 import OfferBanner from './Components/OfferBanner';
 import Nav from './Components/Nav';
 import LandingPage from './Components/LandingPage';
+import CompanyInfo from './Components/CompanyInfo'
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <OfferBanner />
       <Nav />
       <LandingPage />
-      <CoffeeInfo/>
+      <CoffeeInfo />
+      <CompanyInfo />
 
       </div>
     );

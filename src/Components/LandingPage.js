@@ -19,9 +19,9 @@ export default class LandingPage extends Component {
       <div>
         <div class="section_2">
           <div class="white_arrow_container">
-            <img class="white_down_arrow" src="./Icons/icon- angle-arrow-down-white.png"></img>
+            <img class="white_down_arrow" src=""></img>
           </div>
-          <img class="iceCoffee" src="./Images/StubrewIcedCoffee.png" alt="" />
+          <img class="iceCoffee" src="../src/Images/StubrewIcedCoffee.png" alt="" />
           <div class="section_2_info">
             <h4 class="section_2_heading">The new <span class="stuBrew-tag">StuBrew</span></h4>
             <p class="section_2_paragraph">
@@ -30,6 +30,9 @@ export default class LandingPage extends Component {
             </p>
           </div>
         </div>
+      </div>
+      <div class="stuShopBanner">
+        <h4 class="stuShopBannerTextA">The Stu <span class="stuShopBannerTextB">Shop</span></h4>
       </div>
       </div>
     )

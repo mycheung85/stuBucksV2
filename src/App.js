@@ -20,7 +20,7 @@ class App extends Component {
       <StuShop /> */}
       <CoffeeInfo />
       <CompanyInfo />
-
+      <Footer />
       </div>
     );
   }

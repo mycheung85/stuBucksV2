@@ -4,9 +4,9 @@ export default class CompanyInfo extends Component {
   render() {
     return (
       <div>
-      <div class="section_4">
-        <div class="customer_service">
-        <ol class="help">
+      <div className="section_4">
+        <div className="customer_service">
+        <ol className="help">
           <h2 id="help">Help</h2>
           <li>My Account</li>
           <li>Stu Cards</li>
@@ -14,7 +14,7 @@ export default class CompanyInfo extends Component {
           <li>Shoppings & Retunds</li>
           <li>Current Offers</li>
         </ol>
-        <ol class="company_info">
+        <ol className="company_info">
           <h2 id="company_info">Company Info</h2>
           <li>Code Ethics</li>
           <li>Reponsible Sourcing</li>
@@ -22,7 +22,7 @@ export default class CompanyInfo extends Component {
           <li>Limited Partners</li>
           <li>Office Coffee</li>
         </ol>
-        <ol class="about_us">
+        <ol className="about_us">
           <h2 id="about_us">About Us</h2>
           <li>Join Stu</li>
           <li>Social Responsibilty</li>
@@ -30,14 +30,14 @@ export default class CompanyInfo extends Component {
           <li>Newsroom</li> 
         </ol>
         </div>
-        <ol class="_icons">
+        <ol className="_icons">
           <h2 id="share">Share</h2>
-          <div class="share_icons">
-            <li class="fb _icon"></li>
-            <li class="insta _icon"></li>
-            <li class="linked _icon"></li>
-            <li class="twitter _icon"></li>
-            <li class="pin _icon"></li>
+          <div className="share_icons">
+            <li className="fb _icon"></li>
+            <li className="insta _icon"></li>
+            <li className="linked _icon"></li>
+            <li className="twitter _icon"></li>
+            <li className="pin _icon"></li>
           </div>
           </ol> 
       </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import CoffeeInfo from './Components/CoffeeInfo';
 import OfferBanner from './Components/OfferBanner'
 import Nav from './Components/Nav'
 import LandingPage from './Components/LandingPage';
@@ -11,6 +11,10 @@ class App extends Component {
       <OfferBanner />
       <Nav />
       <LandingPage />
+        
+        <OfferBanner />
+        <Nav />
+        <CoffeeInfo/>
       </div>
     );
   }

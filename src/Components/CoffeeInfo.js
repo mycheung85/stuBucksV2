@@ -58,6 +58,7 @@ export default class CoffeeInfo extends Component {
 
 
       </div>
+      </div>
     )
   }
 }

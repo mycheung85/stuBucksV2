@@ -15,28 +15,28 @@ export default class CoffeeInfo extends Component {
           </div>
 
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Espresso Drinks</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg"  src={logo} alt="coffee cup"/>
             <p>Brewed Coffee</p></div>  
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Filter Coffee</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Latte</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Flat White</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Frappe</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Frappe</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Frappe</p></div>
 
           <div className="drinks nav">
@@ -44,10 +44,10 @@ export default class CoffeeInfo extends Component {
           </div>
 
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Chocolate</p></div>
           <div className="drinks selection">
-            <img src={logo} alt="coffee cup"/>
+            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
             <p>Tea</p></div>
         </div>
       </div>

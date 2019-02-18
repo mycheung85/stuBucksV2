@@ -1,62 +1,55 @@
 import React, { Component } from 'react'
-
+import logo from '../Images/coffee-cup.png';
 
 export default class CoffeeInfo extends Component {
   render() {
     return (
-      <div>
+      <div className="menuContainer">
+        <div className="menu">
+          <h2 className="menu header">Menu</h2>
+        </div>
+        
+        <div className="drinks">
+          <div className="drinks nav">
+            <h2>Coffee Drinks</h2>
+          </div>
 
-  <div class="menuContainer">
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Espresso Drinks</p></div>
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Brewed Coffee</p></div>  
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Filter Coffee</p></div>
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Latte</p></div>
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Flat White</p></div>
+          <div classNames="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Frappe</p></div>
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Frappe</p></div>
+          <div classNames="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Frappe</p></div>
 
-<div class="menu">
-  <h2 class="menu header">Menu</h2>
-</div>
+          <div className="drinks nav">
+            <h2>Tea and Other Drinks</h2>
+          </div>
 
-<div class="drinks">
-
-  <div class="drinks nav">
-    <h2>Coffee Drinks</h2>
-  </div>
-
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Espresso Drinks</p></div>
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Brewed Coffee</p></div>  
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Filter Coffee</p></div>
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Latte</p></div>
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Flat White</p></div>
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Frappe</p></div>
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Frappe</p></div>
-  <div class="drinks selection">
-    <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-    <p>Frappe</p></div>
-
-  <div class="drinks nav">
-      <h2>Tea and Other Drinks</h2>
-    </div>
-
-  <div class="drinks selection">
-      <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-      <p>Chocolate</p></div>
-  <div class="drinks selection">
-      <img src="./Images/coffee-cup.png" alt="coffee cup"/>
-      
-    <p>Drinks</p></div>
-</div>
-
-
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Chocolate</p></div>
+          <div className="drinks selection">
+            <img src={logo} alt="coffee cup"/>
+            <p>Tea</p></div>
+        </div>
       </div>
     )
   }

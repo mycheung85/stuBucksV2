@@ -6,6 +6,7 @@ import LandingPage from './Components/LandingPage';
 import CompanyInfo from './Components/CompanyInfo'
 import TrySomethingNew from './Components/TrySomethingNew';
 import StuShop from './Components/StuShop';
+import Footer from './Components/Footer';
 
 
 class App extends Component {

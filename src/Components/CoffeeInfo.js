@@ -29,13 +29,13 @@ export default class CoffeeInfo extends Component {
           <div className="drinks selection">
             <img src={logo} alt="coffee cup"/>
             <p>Flat White</p></div>
-          <div classNames="drinks selection">
+          <div className="drinks selection">
             <img src={logo} alt="coffee cup"/>
             <p>Frappe</p></div>
           <div className="drinks selection">
             <img src={logo} alt="coffee cup"/>
             <p>Frappe</p></div>
-          <div classNames="drinks selection">
+          <div className="drinks selection">
             <img src={logo} alt="coffee cup"/>
             <p>Frappe</p></div>
 
@@ -50,7 +50,6 @@ export default class CoffeeInfo extends Component {
             <img src={logo} alt="coffee cup"/>
             <p>Tea</p></div>
         </div>
-      </div>
       </div>
     )
   }

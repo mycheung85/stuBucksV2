@@ -17,8 +17,8 @@ class App extends Component {
       <OfferBanner />
       <Nav />
       <LandingPage />
-      {/* <TrySomethingNew />
-      <StuShop /> */}
+      {/* <TrySomethingNew /> */}
+      <StuShop />
       <CoffeeInfo />
       <CompanyInfo />
       <Footer />

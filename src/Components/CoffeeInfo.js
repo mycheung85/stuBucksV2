@@ -56,7 +56,7 @@ export default class CoffeeInfo extends Component {
     <p>Drinks</p></div>
 </div>
 
-</div>
+
       </div>
     )
   }

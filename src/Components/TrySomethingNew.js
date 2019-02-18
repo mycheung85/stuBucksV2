@@ -7,9 +7,9 @@ export default class TrySomethingNew extends Component {
         <div>
         <div className="section_2">
           <div className="white_arrow_container">
-            <img className="white_down_arrow" src=""></img>
+            <img className="white_down_arrow" src={require("../Icons/icon- angle-arrow-down-white.png")} alt="white down arrow"></img>
           </div>
-          <img className="iceCoffee" src="../src/Images/StubrewIcedCoffee.png" alt="" />
+          <img className="iceCoffee" src={require("../Images/StubrewIcedCoffee.png")} alt="StubrewIcedCoffee" />
           <div className="section_2_info">
             <h4 className="section_2_heading">The new <span className="stuBrew-tag">StuBrew</span></h4>
             <p className="section_2_paragraph">

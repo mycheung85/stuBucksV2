@@ -4,7 +4,7 @@ export default class CoffeeInfo extends Component {
   render() {
     return (
       <div>
-        testing
+        
       </div>
     )
   }

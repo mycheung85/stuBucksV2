@@ -3,7 +3,7 @@ import CoffeeInfo from './Components/CoffeeInfo';
 import OfferBanner from './Components/OfferBanner';
 import Nav from './Components/Nav';
 import LandingPage from './Components/LandingPage';
-import CompanyInfo from './Components/CompanyInfo'
+import CompanyInfo from './Components/CompanyInfo';
 import TrySomethingNew from './Components/TrySomethingNew';
 import StuShop from './Components/StuShop';
 
@@ -16,8 +16,8 @@ class App extends Component {
       <OfferBanner />
       <Nav />
       <LandingPage />
-      {/* <TrySomethingNew />
-      <StuShop /> */}
+      <TrySomethingNew />
+      {/* <StuShop /> */}
       <CoffeeInfo />
       <CompanyInfo />
 

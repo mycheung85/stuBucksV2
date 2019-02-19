@@ -16,7 +16,7 @@ export default class StuShop extends Component {
               <hr/>
                 <p>Hand-roasted coffee, 
                 <br/>delivered fresh for
-                <br/>ultimate flavour.</p><hr/>
+                <br/>ultimate flavour.</p>
             </div>
             <div className="column colStuShop">
                <img src={require("../Images/buyTea.jpg")} alt="Buy Tea" className="buyTea"></img>
@@ -24,7 +24,7 @@ export default class StuShop extends Component {
               <hr/>
               <p>Our finest selection of
               <br/>premium whole leaf
-              <br/>tea.</p><hr/>
+              <br/>tea.</p>
             </div>
             <div className="column colStuShop">
               <img src={require("../Images/buyEquipment.png")} alt="Buy Equipment" className="buyEquipment"></img>
@@ -32,7 +32,7 @@ export default class StuShop extends Component {
               <hr/>
               <p>Brewers and presses
               <br/>for making the perfect
-              <br/>Stu at home.</p><hr/>
+              <br/>Stu at home.</p>
             </div>
         </div>
       </div>

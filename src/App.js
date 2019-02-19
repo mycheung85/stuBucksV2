@@ -19,9 +19,9 @@ class App extends Component {
       <LandingPage />
       <TrySomethingNew />
       <StuShop />
-      <CoffeeInfo />
       <CompanyInfo />
       <Footer />
+      <CoffeeInfo />
       </div>
     );
   }

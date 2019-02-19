@@ -10,18 +10,48 @@ import Footer from './Components/Footer';
 
 
 class App extends Component {
-  render() {
-    return (
+  constructor(props){
+    super(props);
+    this.state = {
+      pageSelect: 'landingPage'
+    }
+  }
 
-      <div className="App">
+  coffeeNav = () =>{
+    this.setState(()=>({pageSelect: 'coffeeMenu'}))
+  }
+
+  pageSelector = () => {
+    if (this.state.pageSelect === 'landingPage'){
+      return (
+      <div>
       <OfferBanner />
-      <Nav />
-      <LandingPage />
+      <Nav  
+      coffeeNav = {this.coffeeNav}
+      />
+      <LandingPage coffeeNav = {this.coffeeNav}/>
       <TrySomethingNew />
       <StuShop />
       <CompanyInfo />
       <Footer />
-      <CoffeeInfo />
+      </div>
+      )
+    }
+    else if (this.state.pageSelect === 'coffeeMenu'){
+      return(
+        <div>
+          <OfferBanner />
+          <Nav />
+          <CoffeeInfo />
+          <Footer />
+        </div>
+      )
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+      {this.pageSelector()}
       </div>
     );
   }

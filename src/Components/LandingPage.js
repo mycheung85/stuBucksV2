@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
           <p className="landing_info">
             Look at our range and choose the Stu that suits you.
           </p>
-          <button className="choose_coffee">Choose your coffee</button>
+          <button onClick={this.props.coffeeNav} className="choose_coffee">Choose your coffee</button>
         </div>
       </div>
       </div>

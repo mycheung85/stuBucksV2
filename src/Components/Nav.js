@@ -8,9 +8,9 @@ export default class Nav extends Component {
         <nav>
           <img className="logo" src={require("../Images/stubucks-logo.png")} alt="stubucks logo" />
 
-          <a href="/"> <li>Coffee</li></a>
-          <a href="/"> <li>Tea</li></a>
-          <a href="/"><li>Menu</li></a>
+          <a onClick={this.props.coffeeNav} href="#"><li>Coffee</li></a>
+          <a onClick={this.props.coffeeNav} href="#"> <li>Tea</li></a>
+          <a onClick={this.props.coffeeNav} href="#"><li>Menu</li></a>
           <a href="/"><li>Rewards</li></a>
           <a href="/"><li>Want to join our team?</li></a>
           <a href="/"><li>Locations</li></a>

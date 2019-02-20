@@ -75,6 +75,9 @@ class App extends Component {
   landingPageNav = () =>{
     this.setState(()=>({pageSelect: 'landingPage'}))
   }
+  amountChange = (index, delta) =>{
+    this.setState(prevState =>({amount: prevState.hotDrinks[index].amount += delta}))
+  }
 
   pageSelector = () => {
     if (this.state.pageSelect === 'landingPage'){
@@ -101,6 +104,7 @@ class App extends Component {
           <Nav />
           {this.state.hotDrinks.map((hotDrinks, index) =>
           <CoffeeInfo 
+            amountChange = { this.amountChange }
             name = { hotDrinks.name }
             id = { hotDrinks.id }
             amount = { hotDrinks.amount }

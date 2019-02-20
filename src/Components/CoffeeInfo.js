@@ -1,64 +1,28 @@
 import React, { Component } from 'react'
 import logo from '../Images/coffee-cup.png';
+import Counter from './Counter'
 
 export default class CoffeeInfo extends Component {
   render() {
     return (
+      <div>
       <div className="menuContainer">
         <div className="menu">
-          <h2 className="menu header">Menu</h2>
+          
         </div>
         
         <div className="drinks">
-          <div className="drinks nav">
-            <h2>Coffee Drinks</h2>
-          </div>
-
-          <div className="drinks selection">
+          <div className="drinks coffeeNav">
+           <div className="drinks selection">
             <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Espresso Drinks</p></div>
-          <div className="drinks selection">
-
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-
-            <p>Brewed Coffee</p></div>  
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Filter Coffee</p></div>
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Latte</p></div>
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Flat White</p></div>
-
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Frappe</p></div>
-
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Frappe</p></div>
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-
-            <p>Machiato</p></div>
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-
-            <p>Frappe</p></div>
-
-          <div className="drinks nav">
-            <h2>Tea and Other Drinks</h2>
-          </div>
-
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Chocolate</p></div>
-          <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-            <p>Tea</p></div>
+          {this.props.name}
+          <Counter />
         </div>
+
+          
+          </div>
+      </div>
+      </div>
       </div>
     )
   }

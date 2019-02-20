@@ -13,7 +13,59 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      pageSelect: 'landingPage'
+      pageSelect: 'landingPage',
+      hotDrinks:[
+        {
+          name: 'Espresso',
+          amount: 0,
+          id: 1,
+        },
+        {
+          name: 'Brewed Coffee',
+          amount: 0,
+          id: 2,
+        },
+        {
+          name: 'Filter Coffee',
+          amount: 0,
+          id: 3,
+        },
+        {
+          name: 'Latte',
+          amount: 0,
+          id: 4,
+        },
+        {
+          name: 'Flat White',
+          amount: 0,
+          id: 5,
+        },
+        {
+          name: 'Frappe',
+          amount: 0,
+          id: 6,
+        },
+        {
+          name: 'Frappe',
+          amount: 0,
+          id: 7,
+        },
+        {
+          name: 'Machiato',
+          amount: 0,
+          id: 8,
+        },
+        {
+          name: 'Hot Chocolate',
+          amount: 0,
+          id: 9,
+        },
+        {
+          name: 'Tea',
+          amount: 0,
+          id: 10,
+        }
+      ]
     }
   }
 
@@ -42,7 +94,13 @@ class App extends Component {
         <div>
           <OfferBanner />
           <Nav />
-          <CoffeeInfo />
+          {this.state.hotDrinks.map((hotDrinks, index) =>
+          <CoffeeInfo 
+            name = { hotDrinks.name }
+            id = { hotDrinks.id }
+            amount = { hotDrinks.amount }
+            index = { index }
+          />)}
           <Footer />
         </div>
       )

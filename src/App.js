@@ -20,6 +20,9 @@ class App extends Component {
   coffeeNav = () =>{
     this.setState(()=>({pageSelect: 'coffeeMenu'}))
   }
+  landingPageNav = () =>{
+    this.setState(()=>({pageSelect: 'landingPage'}))
+  }
 
   pageSelector = () => {
     if (this.state.pageSelect === 'landingPage'){
@@ -29,7 +32,9 @@ class App extends Component {
       <Nav  
       coffeeNav = {this.coffeeNav}
       />
-      <LandingPage coffeeNav = {this.coffeeNav}/>
+      <LandingPage 
+      coffeeNav = {this.coffeeNav}
+      />
       <TrySomethingNew />
       <StuShop />
       <CompanyInfo />
@@ -41,7 +46,9 @@ class App extends Component {
       return(
         <div>
           <OfferBanner />
-          <Nav />
+          <Nav 
+          landingPageNav = {this.landingPageNav} 
+          />
           <CoffeeInfo />
           <Footer />
         </div>

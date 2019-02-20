@@ -6,7 +6,7 @@ export default class Nav extends Component {
       <div>
         <header className="header">
         <nav>
-          <img className="logo" src={require("../Images/stubucks-logo.png")} alt="stubucks logo" />
+          <img onClick={this.props.landingPageNav} className="logo" src={require("../Images/stubucks-logo.png")} alt="stubucks logo" />
 
           <a onClick={this.props.coffeeNav} href="#"><li>Coffee</li></a>
           <a onClick={this.props.coffeeNav} href="#"> <li>Tea</li></a>

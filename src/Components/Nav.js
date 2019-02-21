@@ -13,30 +13,15 @@ export default class Nav extends Component {
               alt="stubucks logo"
             />
 
-            <a onClick={this.props.coffeeNav} href="#">
-              <li>Coffee</li>
-            </a>
-            <a onClick={this.props.coffeeNav} href="#">
-              {" "}
-              <li>Tea</li>
-            </a>
-            <a onClick={this.props.coffeeNav} href="#">
-              <li>Menu</li>
-            </a>
-            <a href="/">
-              <li>Rewards</li>
-            </a>
-            <a href="/">
-              <li>Want to join our team?</li>
-            </a>
-            <a href="/">
-              <li>Locations</li>
-            </a>
-            <a href="/">
-              <li>Specials</li>
-            </a>
-          </nav>
-        </header>
+          <a onClick={this.props.coffeeNav} href="#"><li>Coffee</li></a>
+          <a onClick={this.props.coffeeNav} href="#"> <li>Tea</li></a>
+          <a onClick={this.props.coffeeNav} href="#"><li>Menu</li></a>
+          <a href="https://www.starbucks.co.uk/card/rewards" target="_blank"><li>Rewards</li></a>
+          <a href="https://wearecodenation.com/" target="_blank"><li>Want to join our team?</li></a>
+          <a href="https://wearecodenation.com/manchester/" target="_blank"><li>Locations</li></a>
+          <a href="https://www.thespecials.com/" target="_blank"><li>Specials</li></a>
+        </nav>
+      </header>
       </div>
     );
   }

@@ -20,6 +20,7 @@ export default class CoffeeInfo extends Component {
         </div>
 
           </div>
+
         </div>
       </div>
     );

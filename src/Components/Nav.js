@@ -1,12 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Nav extends Component {
   render() {
     return (
       <div>
         <header className="header">
-        <nav>
-          <img onClick={this.props.landingPageNav} className="logo" src={require("../Images/stubucks-logo.png")} alt="stubucks logo" />
+          <nav>
+            <img
+              onClick={this.props.landingPageNav}
+              className="logo"
+              src={require("../Images/stubucks-logo.png")}
+              alt="stubucks logo"
+            />
 
           <a onClick={this.props.coffeeNav} href="#"><li>Coffee</li></a>
           <a onClick={this.props.coffeeNav} href="#"> <li>Tea</li></a>
@@ -15,10 +20,9 @@ export default class Nav extends Component {
           <a href="https://wearecodenation.com/" target="_blank"><li>Want to join our team?</li></a>
           <a href="https://wearecodenation.com/manchester/" target="_blank"><li>Locations</li></a>
           <a href="https://www.thespecials.com/" target="_blank"><li>Specials</li></a>
-
         </nav>
       </header>
       </div>
-    )
+    );
   }
 }

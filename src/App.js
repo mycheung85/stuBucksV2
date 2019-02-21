@@ -85,10 +85,10 @@ class App extends Component {
       <div>
       <OfferBanner />
       <Nav  
-      coffeeNav = {this.coffeeNav}
+      coffeeNav = { this.coffeeNav }
       />
       <LandingPage 
-      coffeeNav = {this.coffeeNav}
+      coffeeNav = { this.coffeeNav }
       />
       <TrySomethingNew />
       <StuShop />
@@ -101,7 +101,7 @@ class App extends Component {
       return(
         <div>
           <OfferBanner />
-          <Nav />
+          <Nav landingPageNav ={ this.landingPageNav }/>
           {this.state.hotDrinks.map((hotDrinks, index) =>
           <CoffeeInfo 
             amountChange = { this.amountChange }

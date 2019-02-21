@@ -22,9 +22,7 @@ export default class CoffeeInfo extends Component {
             index = { this.props.index }
           />
         </div>
-
-          
-          </div>
+        </div>
       </div>
       </div>
       </div>

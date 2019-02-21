@@ -37,7 +37,7 @@ class App extends Component {
         <div>
           <OfferBanner />
           <Nav coffeeNav={this.coffeeNav} />
-          <LandingPage coffeeNav={this.coffeeNav} />
+          <LandingPage />
           <TrySomethingNew />
           <StuShop />
           <CompanyInfo />

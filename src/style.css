@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,700");
+.fb, .insta, .linked, .twitter, .pin {
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +18,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background-color: #2a2a2e;
+  background-color: #0e141d;
 }
 
 nav {
@@ -40,17 +46,6 @@ nav {
   height: 80px;
 }
 
-.offerBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 10px;
-}
-
 .shipping {
   width: 80%;
   text-align: center;
@@ -68,6 +63,17 @@ nav {
   margin: 2px;
 }
 
+.offerBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 10px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -83,37 +89,47 @@ a {
 .section_2 {
   height: 100vh;
   width: 100%;
-  background-color: #12121f;
+  background-color: #0e141d;
   margin: 0;
   padding: 0;
-}
-
-.section_two_heading {
-  font-weight: 700;
-  background-color: white;
-  color: black;
-  text-align: center;
-  font-size: 36px;
-  margin: 0;
-}
-
-.new-tag {
-  color: #067655;
-}
-
-.section_2_info {
-  position: absolute;
-  top: 1100px;
-  width: 45%;
-  color: white;
-  margin-left: 50%;
-  font-size: 36px;
-  text-align: right;
+  position: relative;
+  display: inline-block;
 }
 
 .section_2_heading {
   font-size: 72px;
-  font-weight: 500;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 15%;
+}
+
+.section_2_info {
+  width: 45%;
+  color: white;
+  font-size: 36px;
+  text-align: right;
+  position: absolute;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.iceCoffee {
+  top: 70px;
+  left: 7.5%;
+  height: 75%;
+  position: relative;
+}
+
+.section_3 {
+  margin: 0px 130px 0px 130px;
+  position: relative;
+}
+
+.new-tag {
+  color: #067655;
 }
 
 .stuBrew-tag,
@@ -121,30 +137,25 @@ a {
   color: #067655;
 }
 
-.iceCoffee {
-  position: absolute;
-  left: 120px;
-  top: 1050px;
-  height: 630px;
-  width: 480px;
-}
-
 /* START OF SHOP COFFEE, TEA & EQUIPMENT SECTION */
-.section_3 {
-  margin: 0px 130px 0px 130px;
+.arrowDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.arrowDown img {
-  position: absolute;
-  left: 690px;
-  height: 60px;
-  width: 60px;
-  margin-top: 20px;
+.green_arrow_down {
+  width: 61px;
+  height: 46px;
+  padding-top: 29px;
 }
 
 .stuShopBanner {
   height: 100px;
-  background-color: #2b706f;
+  background-color: #067655;
   font-size: 36px;
 }
 
@@ -157,7 +168,7 @@ a {
 }
 
 .stuShopBannerTextB {
-  color: black;
+  color: #0e141d;
 }
 
 .colStuShop h4 {
@@ -165,7 +176,7 @@ a {
   margin: 25px;
 }
 
-.colStuShop p {
+.colStuShop h4 p {
   font-size: 18px;
   margin: 25px;
   font-family: "Roboto Slab: 300", serif;
@@ -203,7 +214,7 @@ a {
 }
 
 hr {
-  border-top: 1px solid black;
+  border-top: 1px solid 0 #0e141d;
   margin: 0px 150px 0px 150px;
 }
 
@@ -244,23 +255,6 @@ hr {
   color: white;
 }
 
-.logo {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  top: 20px;
-  left: 48px;
-  padding-left: 20px;
-  overflow: auto;
-}
-
-.text_box_1 {
-  display: absolute;
-  padding: 0;
-  margin: 0;
-  color: white;
-}
-
 .landing_page {
   position: absolute;
   height: 89px;
@@ -279,7 +273,7 @@ hr {
 }
 
 .love {
-  color: #499149;
+  color: #067655;
 }
 
 .choose_coffee {
@@ -289,7 +283,7 @@ hr {
   left: 120px;
   top: 580px;
   border-radius: 20px 0;
-  background-color: #12121f;
+  background-color: #0e141d;
   color: white;
   font-size: 20px;
 }
@@ -326,37 +320,22 @@ li {
 
 .fb {
   background-image: url(./Icons/icon-facebook.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
 }
 
 .insta {
   background-image: url(./Icons/icon-instagram.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
 }
 
 .linked {
   background-image: url(./Icons/icon-linkedin.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
 }
 
 .twitter {
   background-image: url(./Icons/icon-twitter.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
 }
 
 .pin {
   background-image: url(./Icons/icon-pinterest.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
 }
 
 .customer_service {
@@ -375,29 +354,23 @@ li {
 
 .footer {
   background: #0e141d;
-  color: #ffffff;
+  color: white;
   font-size: 16px;
   margin: 0px;
   height: 125px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 30px 0px 0px 0px;
 }
 
 .footerLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 100px;
+  margin-left: 5%;
+  display: inline-block;
 }
 
 .footerRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 100px;
   text-align: right;
+  float: right;
+  display: inline-block;
+  margin-right: 5%;
 }
 
 .white_down_arrow {
@@ -448,7 +421,7 @@ Menu Section */
 }
 
 /* text-align: center; */
-img {
+.coffeeCupImg {
   margin: 15px;
   border: 5px;
   height: 80px;

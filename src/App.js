@@ -7,7 +7,7 @@ import CompanyInfo from './Components/CompanyInfo';
 import TrySomethingNew from './Components/TrySomethingNew';
 import StuShop from './Components/StuShop';
 import Footer from './Components/Footer';
-
+import Basket from './Components/Basket'
 
 class App extends Component {
   constructor(props){
@@ -78,6 +78,7 @@ class App extends Component {
   amountChange = (index, delta) =>{
     this.setState(prevState =>({amount: prevState.hotDrinks[index].amount += delta}))
   }
+  
 
   pageSelector = () => {
     if (this.state.pageSelect === 'landingPage'){
@@ -110,6 +111,15 @@ class App extends Component {
             amount = { hotDrinks.amount }
             index = { index }
           />)}
+          {this.state.hotDrinks.map((hotDrinks, index) =>
+          hotDrinks.amount>0? 
+          <Basket 
+            name = { hotDrinks.name }
+            id = { hotDrinks.id }
+            amount = { hotDrinks.amount }
+            index = { index }
+          />: null
+          )}
           <Footer />
         </div>
       )

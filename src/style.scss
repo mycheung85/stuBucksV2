@@ -227,17 +227,18 @@ hr {
   position: absolute;
   height: 89px;
   left: 120px;
-  top: 320px;
+  top: 300px;
   font-size: 92px;
+  font-weight: 700;
 }
 
 .landing_info {
   position: absolute;
   width: 612px;
   height: 40px;
-  font-size: 25px;
+  font-size: 36px;
   left: 120px;
-  top: 490px;
+  top: 470px;
 }
 
 .love {
@@ -245,11 +246,11 @@ hr {
 }
 
 .choose_coffee {
-  position: absolute;
+  position: relative;
   width: 225px;
   height: 50px;
   left: 120px;
-  top: 580px;
+  top: 540px;
   border-radius: 20px 0;
   background-color: $stuBucks-dark;
   color: $stuBucks-white;

@@ -26,6 +26,7 @@ export default class TrySomethingNew extends Component {
               developed carefully on the darkside of the moon, instilled with
               the freshness of Stu himself.
             </p>
+
           </div>
         </div>
       </div>

@@ -8,17 +8,15 @@ export default class CoffeeInfo extends Component {
       <div>
         <div className="menuContainer">
           <div className="drinks coffeeNav">
-
-           <div className="drinks selection">
-            <img className="coffeeCupImg" src={logo} alt="coffee cup"/>
-          {this.props.name}
-          <Counter 
-            amountChange = { this.props.amountChange }
-            amount = { this.props.amount }
-            index = { this.props.index }
-          />
-        </div>
-
+            <div className="drinks selection">
+              <img className="coffeeCupImg" src={logo} alt="coffee cup" />
+              {this.props.name}
+              <Counter
+                amountChange={this.props.amountChange}
+                amount={this.props.amount}
+                index={this.props.index}
+              />
+            </div>
           </div>
         </div>
       </div>

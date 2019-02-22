@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,700");
-.fb, .insta, .linked, .twitter, .pin {
+.fb,
+.insta,
+.linked,
+.twitter,
+.pin {
   background-size: 100%;
   height: 32px;
   width: 32px;
@@ -9,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 }
 
@@ -26,21 +30,21 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 0 200px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   color: white;
   font-size: 20px;
   height: 80px;
@@ -69,8 +73,8 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   font-size: 10px;
 }
 
@@ -143,8 +147,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .green_arrow_down {
@@ -190,11 +194,11 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -224,14 +228,14 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   height: 611px;
   width: 100%;
   background-color: #e7e7e7;
@@ -314,8 +318,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 220px;
 }
 
@@ -345,7 +349,7 @@ li {
   display: flex;
   width: 50%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 245px;
 }
 
@@ -385,40 +389,29 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* The coffeeInfo styles --> 
 
 Menu Section */
-.menuContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: [first] 35% [second] 35% [end] 30%;
-      grid-template-columns: [first] 35% [second] 35% [end] 30%;
-}
-
-/* The Drinks Section */
-.coffeeNav {
-  grid-column: 1/ -1;
-}
 
 .selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -ms-grid-columns: [first] 20% [end] 80%;
-      grid-template-columns: [first] 20% [end] 80%;
+  grid-template-columns: [first] 20% [end] 80%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* text-align: center; */
@@ -429,67 +422,4 @@ Menu Section */
   width: 80px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 460px) {
-  .menuContainer {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .header {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .drinks {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .selection {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(4, 80px); */
-    grid-auto-rows: 80px;
-    grid-gap: 5px;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .menuContainer {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .menu {
-    -ms-grid-rows: 1 / -1;
-        grid-template-rows: 1 / -1;
-  }
-  .drinks {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 100px;
-    grid-gap: 5px;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 480px) {
-  .menuContainer {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .drinks {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .selection {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
 /*# sourceMappingURL=style.css.map */

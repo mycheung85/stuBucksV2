@@ -16,7 +16,7 @@ export default class Counter extends Component {
         </button>
         <span className="counter-score">{this.props.amount}</span>
         <button
-          className="counter-action decrement"
+          className="counter-action increment"
           onClick={() => this.props.amountChange(this.props.index, 1)}
         >
           +

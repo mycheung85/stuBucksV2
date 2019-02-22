@@ -26,12 +26,15 @@ export default class LandingPage extends Component {
         <div className="section_1">
           <div className="text_box_1">
             <p className="landing_page">
-              <span className="love">Love</span>
+
+              <span className="love">Love </span>
+
               your Stu
             </p>
             <p className="landing_info">
               Look at our range and choose the Stu that suits you.
             </p>
+
             <Toggle>
               {({ on, toggle }) => (
                 <Fragment className="orderForm">

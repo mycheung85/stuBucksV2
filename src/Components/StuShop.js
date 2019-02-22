@@ -12,6 +12,7 @@ export default class StuShop extends Component {
         <div className="section_3">
           <div className="arrowDown">
             <img
+              className="green_arrow_down"
               src={require("../Icons/icon-angle-arrow-down-green.png")}
               alt="Green down arrow"
             />

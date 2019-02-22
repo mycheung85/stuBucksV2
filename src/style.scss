@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,700");
 
+$stuBucks-dark: #0e141d;
+$stuBucks-green: #067655;
+$stuBucks-white: white;
+
+%social-icons {
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +20,7 @@ body {
 header {
   display: flex;
   text-align: center;
-  background-color: rgb(42, 42, 46);
+  background-color: $stuBucks-dark;
 }
 
 nav {
@@ -21,15 +31,9 @@ nav {
   flex-grow: 1;
   padding: 0 200px;
   flex-wrap: wrap;
-  color: white;
+  color: $stuBucks-white;
   font-size: 20px;
   height: 80px;
-}
-
-.offerBar {
-  display: flex;
-  flex-direction: row;
-  font-size: 10px;
 }
 
 .shipping {
@@ -39,18 +43,24 @@ nav {
 
 .nearestStore {
   right: 0;
-  background: #067655;
-  color: white;
+  background: $stuBucks-green;
+  color: $stuBucks-white;
   width: 20%;
   text-align: center;
 }
 
 .offer {
   margin: 2px;
+
+  &Bar {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+  }
 }
 
 a {
-  color: white;
+  color: $stuBucks-white;
   text-decoration: none;
 }
 
@@ -60,96 +70,98 @@ a {
   background-image: url(./Images/StubucksHero.jpg);
   background-size: cover;
 }
+
 .section_2 {
   height: 100vh;
   width: 100%;
-  background-color: rgb(18, 18, 31);
+  background-color: $stuBucks-dark;
   margin: 0;
   padding: 0;
-}
-
-.section_two_heading {
-  font-weight: 700;
-  background-color: white;
-  color: black;
-  text-align: center;
-  font-size: 36px;
-  margin: 0;
-}
-
-.new-tag {
-  color: #067655;
-}
-
-.section_2_info {
-  position: absolute;
-  top: 1100px;
-  width: 45%;
-  color: white;
-  margin-left: 50%;
-  font-size: 36px;
-  text-align: right;
+  position: relative;
+  display: inline-block;
 }
 
 .section_2_heading {
   font-size: 72px;
-  font-weight: 500;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 15%;
+}
+
+.section_2_info {
+  width: 45%;
+  color: $stuBucks-white;
+  font-size: 36px;
+  text-align: right;
+  position: absolute;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.iceCoffee {
+  top: 70px;
+  left: 7.5%;
+  height: 75%;
+  position: relative;
+}
+
+.section_3 {
+  margin: 0px 130px 0px 130px;
+  position: relative;
+}
+
+.new-tag {
+  color: $stuBucks-green;
 }
 
 .stuBrew-tag,
 .nitroBrew-tag {
-  color: #067655;
-}
-
-.iceCoffee {
-  position: absolute;
-  left: 120px;
-  top: 1050px;
-  height: 630px;
-  width: 480px;
+  color: $stuBucks-green;
 }
 
 /* START OF SHOP COFFEE, TEA & EQUIPMENT SECTION */
 
-.section_3 {
-  margin: 0px 130px 0px 130px;
+.arrowDown {
+  display: flex;
+  justify-content: center;
 }
 
-.arrowDown img {
-  position: absolute;
-  left: 690px;
-  height: 60px;
-  width: 60px;
-  margin-top: 20px;
+.green_arrow_down {
+  width: 61px;
+  height: 46px;
+  padding-top: 29px;
 }
 
 .stuShopBanner {
   height: 100px;
-  background-color: #2b706f;
+  background-color: $stuBucks-green;
   font-size: 36px;
-}
 
-.stuShopBannerTextA {
-  position: relative;
-  top: 25%;
-  margin: 0px;
-  text-align: center;
-  color: white;
-}
+  &TextA {
+    position: relative;
+    top: 25%;
+    margin: 0px;
+    text-align: center;
+    color: $stuBucks-white;
+  }
 
-.stuShopBannerTextB {
-  color: black;
+  &TextB {
+    color: $stuBucks-dark;
+  }
 }
 
 .colStuShop h4 {
   font-size: 36px;
   margin: 25px;
-}
 
-.colStuShop p {
-  font-size: 18px;
-  margin: 25px;
-  font-family: "Roboto Slab: 300", serif;
+  & p {
+    font-size: 18px;
+    margin: 25px;
+    font-family: "Roboto Slab: 300", serif;
+  }
 }
 
 .shopContainer {
@@ -177,7 +189,7 @@ a {
 }
 
 hr {
-  border-top: 1px solid black;
+  border-top: 1px solid 0$stuBucks-dark;
   margin: 0px 150px 0px 150px;
 }
 
@@ -208,56 +220,43 @@ hr {
   display: absolute;
   padding: 0;
   margin: 0;
-  color: white;
-}
-
-.logo {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  top: 20px;
-  left: 48px;
-  padding-left: 20px;
-  overflow: auto;
-}
-
-.text_box_1 {
-  display: absolute;
-  padding: 0;
-  margin: 0;
-  color: white;
+  color: $stuBucks-white;
 }
 
 .landing_page {
   position: absolute;
   height: 89px;
   left: 120px;
-  top: 320px;
+  top: 300px;
   font-size: 92px;
+  font-weight: 700;
 }
+
 .landing_info {
   position: absolute;
   width: 612px;
   height: 40px;
-  font-size: 25px;
+  font-size: 36px;
   left: 120px;
-  top: 490px;
+  top: 470px;
 }
+
 .love {
-  color: rgb(73, 145, 73);
+  color: $stuBucks-green;
 }
 
 .choose_coffee {
-  position: absolute;
+  position: relative;
   width: 225px;
   height: 50px;
   left: 120px;
-  top: 580px;
+  top: 540px;
   border-radius: 20px 0;
-  background-color: rgb(18, 18, 31);
-  color: white;
+  background-color: $stuBucks-dark;
+  color: $stuBucks-white;
   font-size: 20px;
 }
+
 .help,
 .company_info,
 .about_us {
@@ -286,37 +285,27 @@ li {
 
 .fb {
   background-image: url(./Icons/icon-facebook.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
+  @extend %social-icons;
 }
 
 .insta {
   background-image: url(./Icons/icon-instagram.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
+  @extend %social-icons;
 }
 
 .linked {
   background-image: url(./Icons/icon-linkedin.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
+  @extend %social-icons;
 }
 
 .twitter {
   background-image: url(./Icons/icon-twitter.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
+  @extend %social-icons;
 }
 
 .pin {
   background-image: url(./Icons/icon-pinterest.png);
-  background-size: 100%;
-  height: 32px;
-  width: 32px;
+  @extend %social-icons;
 }
 
 .customer_service {
@@ -329,25 +318,26 @@ li {
 ._icons {
   padding: 0;
 }
+
 .footer {
   background: #0e141d;
-  color: #ffffff;
+  color: $stuBucks-white;
   font-size: 16px;
   margin: 0px;
   height: 125px;
-  display: flex;
   padding: 30px 0px 0px 0px;
-}
 
-.footerLeft {
-  display: flex;
-  margin-left: 100px;
-}
+  &Left {
+    margin-left: 5%;
+    display: inline-block;
+  }
 
-.footerRight {
-  display: flex;
-  margin-left: 100px;
-  text-align: right;
+  &Right {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    margin-right: 5%;
+  }
 }
 
 .white_down_arrow {
@@ -381,9 +371,10 @@ Menu Section */
   grid-template-columns: [first]20% [end]80%;
   align-items: center;
 }
+
 /* text-align: center; */
 
-img {
+.coffeeCupImg {
   margin: 15px;
   border: 5px;
   height: 80px;
@@ -394,12 +385,15 @@ img {
   .menuContainer {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .header {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .drinks {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .selection {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(4, 80px); */
@@ -414,9 +408,11 @@ img {
   .menuContainer {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .menu {
     grid-template-rows: 1 / -1;
   }
+
   .drinks {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 100px;
@@ -430,9 +426,11 @@ img {
   .menuContainer {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .drinks {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .selection {
     grid-template-columns: repeat(1, 1fr);
   }

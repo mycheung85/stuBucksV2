@@ -10,7 +10,7 @@ export default class CoffeeInfo extends Component {
           <div className="drinks coffeeNav">
             <div className="drinks selection">
               <img className="coffeeCupImg" src={logo} alt="coffee cup" />
-              {this.props.name}
+              <span className="coffeeNames"> {this.props.name} </span>
               <Counter
                 amountChange={this.props.amountChange}
                 amount={this.props.amount}

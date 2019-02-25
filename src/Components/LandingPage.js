@@ -26,9 +26,7 @@ export default class LandingPage extends Component {
         <div className="section_1">
           <div className="text_box_1">
             <p className="landing_page">
-
               <span className="love">Love </span>
-
               your Stu
             </p>
             <p className="landing_info">
@@ -41,6 +39,7 @@ export default class LandingPage extends Component {
                   <button onClick={toggle} className="choose_coffee">
                     Choose your coffee
                   </button>
+
                   <Modal on={on} toggle={toggle}>
                     {this.state.hotDrinks.map((hotDrinks, index) => (
                       <CoffeeInfo

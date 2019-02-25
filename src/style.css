@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,700");
-.fb, .insta, .linked, .twitter, .pin {
+.fb,
+.insta,
+.linked,
+.twitter,
+.pin {
   background-size: 100%;
   height: 32px;
   width: 32px;
@@ -9,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 }
 
@@ -26,21 +30,21 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 0 200px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   color: white;
   font-size: 20px;
   height: 80px;
@@ -69,8 +73,8 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   font-size: 10px;
 }
 
@@ -143,8 +147,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .green_arrow_down {
@@ -190,11 +194,11 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -224,14 +228,14 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   height: 611px;
   width: 100%;
   background-color: #e7e7e7;
@@ -246,6 +250,7 @@ hr {
   left: 48px;
   padding-left: 20px;
   overflow: auto;
+  cursor: pointer;
 }
 
 .text_box_1 {
@@ -287,6 +292,7 @@ hr {
   background-color: #0e141d;
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .help,
@@ -314,8 +320,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 220px;
 }
 
@@ -345,7 +351,7 @@ li {
   display: flex;
   width: 50%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 245px;
 }
 
@@ -385,8 +391,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* The coffeeInfo styles --> 
@@ -397,6 +403,8 @@ Menu Section */
   display: grid;
   -ms-grid-columns: [first] 35% [second] 35% [end] 30%;
       grid-template-columns: [first] 35% [second] 35% [end] 30%;
+  border: solid black 0.1px;
+  margin-bottom: 2px;
 }
 
 /* The Drinks Section */
@@ -404,28 +412,28 @@ Menu Section */
   grid-column: 1/ -1;
 }
 
+
 .selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-grid-columns: [first] 20% [end] 80%;
-      grid-template-columns: [first] 20% [end] 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  font-weight: 700;
+  background-color: #067655;
+  border: 1px solid black;
+  font-size: 25px;
 }
 
-/* text-align: center; */
 .coffeeCupImg {
-  margin: 15px;
-  border: 5px;
+  margin: 7.5px;
   height: 80px;
+
   width: 80px;
 }
 
@@ -513,3 +521,40 @@ Menu Section */
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+}
+
+.counter-action {
+  border: none;
+  font-size: 1.15em;
+  font-weight: bold;
+  background-color: #DCDCDC;
+  cursor: pointer;
+  outline: 1px solid black;
+  margin: 1rem;
+}
+
+.counter-action:hover {
+  color: #fff;
+}
+
+.increment:hover {
+  background: #83D97C;
+}
+
+.decrement:hover {
+  background: #EF5350;
+}
+
+.counter-score {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+  line-height: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */
+

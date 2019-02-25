@@ -429,6 +429,15 @@ Menu Section */
   width: 80px;
 }
 
+.basket-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 460px) {
   .menuContainer {
     -ms-grid-columns: (1fr)[1];

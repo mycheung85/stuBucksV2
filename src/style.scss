@@ -381,6 +381,12 @@ Menu Section */
   width: 80px;
 }
 
+.basket-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
 @media screen and (max-width: 1024px) and (min-width: 460px) {
   .menuContainer {
     grid-template-columns: repeat(1, 1fr);

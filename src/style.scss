@@ -414,6 +414,22 @@ Menu Section */
   line-height: 2em;
 }
 
+.basket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.basket-amount {
+  padding: 20px;
+
+}
+.basket-names {
+  padding: 20px;
+}
+
+
 @media screen and (max-width: 1024px) and (min-width: 460px) {
   .menuContainer {
     grid-template-columns: repeat(1, 1fr);

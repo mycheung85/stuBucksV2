@@ -12,7 +12,7 @@ export default class Modal extends Component {
           <div className="modalWrapper">
             <div className="modalCard">
               <button onClick={toggle} className="closeModal">
-                CLOSE
+                X
               </button>
               <div>{children}</div>
               <div className="background" />

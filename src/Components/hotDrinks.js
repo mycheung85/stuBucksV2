@@ -48,7 +48,7 @@ export const hotDrinks = [
       "Espresso complemented with white chocolate syrup and steamed milk, topped with whipped cream."
   },
   {
-    name: "Machiato",
+    name: "Macchiato",
     amount: 0,
     id: 8,
     info:

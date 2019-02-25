@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./modal.css";
 import Portal from "./Portal";
-import Basket from '../Basket';
-import YourOrder from '../YourOrder';
+import Basket from "../Basket";
 
 export default class Modal extends Component {
   render() {
@@ -10,22 +9,20 @@ export default class Modal extends Component {
 
     return (
       <div>
-      <Portal>
-        {on && (
-          <div className="modalWrapper">
-            <div className="modalCard">
-              <button onClick={toggle} className="closeModal">
-                X
-              </button>
-              <div>{children}</div>
-              <Basket />
-              <YourOrder />
-              <div className="background" />
+        <Portal>
+          {on && (
+            <div className="modalWrapper">
+              <div className="modalCard">
+                <button onClick={toggle} className="closeModal">
+                  X
+                </button>
+                <div>{children}</div>
+                <Basket />
+                <div className="background" />
+              </div>
             </div>
-          </div>
-        )}
-      </Portal>
-      
+          )}
+        </Portal>
       </div>
     );
   }

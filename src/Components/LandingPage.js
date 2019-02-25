@@ -5,6 +5,7 @@ import CoffeeInfo from "./CoffeeInfo";
 import { hotDrinks } from "./hotDrinks";
 import Basket from "./Basket";
 import "../style.css";
+import YourOrder from "./YourOrder";
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -41,15 +42,7 @@ export default class LandingPage extends Component {
                   </button>
 
                   <Modal on={on} toggle={toggle}>
-                    {this.state.hotDrinks.map((hotDrinks, index) => (
-                      <CoffeeInfo
-                        amountChange={this.amountChange}
-                        name={hotDrinks.name}
-                        id={hotDrinks.id}
-                        amount={hotDrinks.amount}
-                        index={index}
-                      />
-                    ))}
+                    <YourOrder />
                     {this.state.hotDrinks.map((hotDrinks, index) =>
                       hotDrinks.amount > 0 ? (
                         <Basket
@@ -60,6 +53,15 @@ export default class LandingPage extends Component {
                         />
                       ) : null
                     )}
+                    {this.state.hotDrinks.map((hotDrinks, index) => (
+                      <CoffeeInfo
+                        amountChange={this.amountChange}
+                        name={hotDrinks.name}
+                        id={hotDrinks.id}
+                        amount={hotDrinks.amount}
+                        index={index}
+                      />
+                    ))}
                   </Modal>
                 </Fragment>
               )}

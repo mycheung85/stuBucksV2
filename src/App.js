@@ -9,6 +9,7 @@ import StuShop from "./Components/StuShop";
 import Footer from "./Components/Footer";
 import Basket from "./Components/Basket";
 import { hotDrinks } from "./Components/hotDrinks";
+import YourOrder from "./Components/YourOrder";
 
 class App extends Component {
   constructor(props) {
@@ -56,8 +57,9 @@ class App extends Component {
               id={hotDrinks.id}
               amount={hotDrinks.amount}
               index={index}
-            />
+            /> 
           ))}
+            <YourOrder />
           {this.state.hotDrinks.map((hotDrinks, index) =>
             hotDrinks.amount > 0 ? (
               <Basket

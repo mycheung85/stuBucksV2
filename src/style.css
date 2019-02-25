@@ -436,6 +436,17 @@ Menu Section */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket-amount {
+  padding: 20px;
+}
+
+.basket-names {
+  padding: 20px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 460px) {

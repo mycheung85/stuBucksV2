@@ -5,8 +5,8 @@ export default class Basket extends Component {
   render() {
     return (
       <div className="basket-container">
-        <div className="basket-names">{this.props.name}</div>
-        <div className="basket-amount">{this.props.amount}</div>
+        <p className="basket-names">{this.props.name}</p>
+        <p className="basket-amount">{this.props.amount}</p>
       </div>
     );
   }

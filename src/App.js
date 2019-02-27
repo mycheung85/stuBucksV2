@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import CoffeeInfo from "./Components/CoffeeInfo";
 import OfferBanner from "./Components/OfferBanner";
 import Nav from "./Components/Nav";
@@ -36,13 +36,15 @@ class App extends Component {
     if (this.state.pageSelect === "landingPage") {
       return (
         <div>
-          <OfferBanner />
-          <Nav coffeeNav={this.coffeeNav} />
-          <LandingPage />
-          <TrySomethingNew />
-          <StuShop />
-          <CompanyInfo />
-          <Footer />
+          <Fragment>
+            <OfferBanner />
+            <Nav coffeeNav={this.coffeeNav} />
+            <LandingPage />
+            <TrySomethingNew />
+            <StuShop />
+            <CompanyInfo />
+            <Footer />
+          </Fragment>
         </div>
       );
     } else if (this.state.pageSelect === "coffeeMenu") {
@@ -57,9 +59,9 @@ class App extends Component {
               id={hotDrinks.id}
               amount={hotDrinks.amount}
               index={index}
-            /> 
+            />
           ))}
-            <YourOrder />
+          <YourOrder />
           {this.state.hotDrinks.map((hotDrinks, index) =>
             hotDrinks.amount > 0 ? (
               <Basket

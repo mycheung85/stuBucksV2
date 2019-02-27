@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import OrderForm from "./OrderForm";
 
 export default class Nav extends Component {
   render() {
@@ -36,6 +37,7 @@ export default class Nav extends Component {
               <li>Specials</li>
             </a>
           </nav>
+          <OrderForm />
         </header>
       </div>
     );

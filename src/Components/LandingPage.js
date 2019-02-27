@@ -40,7 +40,6 @@ export default class LandingPage extends Component {
                   <button onClick={toggle} className="choose_coffee">
                     Choose your coffee
                   </button>
-
                   <Modal on={on} toggle={toggle}>
                     <YourOrder />
                     {this.state.hotDrinks.map((hotDrinks, index) =>

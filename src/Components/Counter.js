@@ -21,6 +21,15 @@ export default class Counter extends Component {
         >
           +
         </button>
+        {/* <div className="select">
+          <select name="slct" id="slct">
+            <option>Choose an SIZE</option>
+            <option value="Short">Short (267 ml)</option>
+            <option value="Tall">Tall (354 ml)</option>
+            <option value="Grande">Grande (473 ml)</option>
+            <option value="Venti">Venti (591 ml)</option>
+          </select>
+        </div> */}
       </div>
     );
   }

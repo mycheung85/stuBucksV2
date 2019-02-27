@@ -33,11 +33,28 @@ export default class CompanyInfo extends Component {
           <ol className="_icons">
             <h2 id="share">Share</h2>
             <div className="share_icons">
-              <li className="fb _icon" />
-              <li className="insta _icon" />
-              <li className="linked _icon" />
-              <li className="twitter _icon" />
-              <li className="pin _icon" />
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <li className="fb _icon" />
+              </a>
+              <a
+                href="https://www.instagram.com/wearecodenation/"
+                target="_blank"
+              >
+                <li className="insta _icon" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <li className="linked _icon" />
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <li className="twitter _icon" />
+              </a>
+              <a href="https://www.pinterest.co.uk/" target="_blank">
+                <li className="pin _icon" />
+              </a>
             </div>
           </ol>
         </div>
